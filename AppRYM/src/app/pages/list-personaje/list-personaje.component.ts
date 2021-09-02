@@ -46,7 +46,7 @@ export class ListPersonajeComponent implements OnInit {
   }
 
   private getPersonajes(): void {
-    this.apiService.getPersonajes(this.query, this.pageN)
+    this.apiService.getPersonajes(this.query)
       .subscribe((res: any) => {
         const { info, results } = res;
         this.personajes = [...this.personajes, ...results];
