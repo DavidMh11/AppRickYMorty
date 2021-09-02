@@ -1,0 +1,84 @@
+div {
+  font-family: "Gothic A1", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.personaje {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  min-width: 400px;
+}
+.personaje .content {
+  width: 70%;
+  border-bottom-right-radius: 100px;
+  border-top-right-radius: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-bottom: 5px;
+  min-width: 400px;
+  box-shadow: 10px 9px 41px 12px rgba(105, 200, 236, 0.75);
+  -webkit-box-shadow: 10px 9px 41px 12px rgba(105, 200, 236, 0.75);
+  -moz-box-shadow: 10px 9px 41px 12px rgba(105, 200, 236, 0.75);
+}
+.title {
+  text-align: center;
+  color: #69c8ecff;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+}
+
+.personaje .imgBox img {
+  box-shadow: -20px 9px 41px 12px rgba(105, 200, 236, 0.75);
+  -webkit-box-shadow: -20px 9px 41px 12px rgba(105, 200, 236, 0.75);
+  -moz-box-shadow: -20px 9px 41px 12px rgba(105, 200, 236, 0.75);
+  position: relative;
+  width: 100%;
+  min-width: 400px;
+  background-size: contain;
+  background-position: center;
+  justify-content: center;
+  align-content: center;
+  border-bottom-left-radius: 100px;
+  border-top-left-radius: 100px;
+}
+
+table {
+  width: 100%;
+}
+tr {
+  width: 100%;
+  text-align: left;
+  font-size: large;
+  letter-spacing: 1px;
+}
+th {
+  width: 50%;
+  color: #69c8ecff;
+}
+td {
+  text-align: left;
+  width: 50%;
+  color: black;
+  font-weight: 600;
+}
+
+@media (max-width: 800px) {
+  .personaje {
+    flex-direction: column;
+  }  
+  .personaje .imgBox img {
+    width: 100%;
+    padding: 50px;
+    min-height: 400px;
+  }
+  .personaje .content{
+    width: 100%;
+    padding: 50px;  
+    min-height: 400px;
+  }
+}

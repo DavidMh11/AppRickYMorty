@@ -1,0 +1,21 @@
+<div class="title">
+    <h2>Personajes</h2>
+</div>
+<div class="body">
+    <div class="box" *ngFor="let per of personajes">
+        <div class=" imgBx">
+            <img src="{{per.image}}" alt="person">
+        </div>
+        <div class="content">
+            <h2>{{per.name | slice:0:15}}<br>
+                <span>{{per.status}}</span><br>
+            </h2>
+            <div class="container">
+                <div class="btn"><a (click)="detailsPersonaje(per.id)">Más...</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="pages">
+    <a (click)="nextPage()" class="page round">&#8250;</a>
+</div>

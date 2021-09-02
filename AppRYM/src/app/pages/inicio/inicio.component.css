@@ -1,0 +1,140 @@
+div {
+  border-radius: 10px;
+  font-family: "Gothic A1", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  box-sizing: border-box;  
+}
+
+
+.personajes {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+.personajes .content {
+  padding: 50px;
+  width: 50%;
+}
+.title {
+  text-align: center;
+  color: #69c8ecff;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.text {
+  color: #b7e4f9ff;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.personajes .imgBox {
+  background: url(../../../assets/img/personajes.png);
+  width: 50%;
+  border-radius: 10px;
+  background-size: contain;
+  background-position: center;
+  padding: 50px;
+}
+.ubicacion {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+.ubicacion .content {
+  padding: 50px;
+  width: 50%;
+}
+.title {
+  text-align: center;
+  color: #69c8ecff;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.text {
+  color: #b7e4f9ff;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.btn:hover {
+  color: aqua;
+  letter-spacing: 2px;
+  
+}
+.ubicacion .imgBox {
+  background: url(../../../assets/img/ubicaciones.png);
+  width: 50%;  
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border-radius: 10px;
+  background-size: contain;
+  background-position: center;
+  padding: 50px;
+}
+
+.episodios {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+.episodios .title {
+  text-align: center;
+}
+.episodios .content {
+  padding: 50px;
+  width: 100%;
+}
+.episodios img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.25;
+}
+
+@media (max-width: 991px) {
+  .personajes,
+  .ubicaciones {
+    flex-direction: column;
+  }
+  .personajes .content,
+  .personajes .imgBox,
+  .ubicaciones .content,
+  .ubicaciones .imgBox {
+    width: 100%;
+    padding: 50px;
+    min-height: 400px;
+  }
+  .episodios img {
+    background-size: cover;
+  }
+}
+table {
+  width: 100%;
+}
+tr {
+  width: 100%;
+  text-align: left;
+  font-size: large;
+  letter-spacing: 1px;
+}
+th {
+  width: 50%;
+  color: #69c8ecff;
+  text-align: right;
+}
+td {
+  text-align: left;
+  width: 50%;
+  color: black;
+  font-weight: 600;
+}
+

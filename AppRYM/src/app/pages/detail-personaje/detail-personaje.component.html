@@ -1,0 +1,34 @@
+<div class="personaje">
+    <div class="imgBox">
+        <img src="{{personaje.image}}" alt="">
+    </div>
+    <div class="content">
+        <h2 class="title">{{personaje.name}}</h2>
+        <table>
+            <tr>
+                <th>Estado:</th>
+                <td>{{personaje.status}}</td>
+            </tr>
+            <tr>
+                <th>Especie:</th>            
+                <td>{{personaje.species}}</td>                
+            </tr>
+            <tr *ngIf="personaje.type">
+                <th>Tipo:</th>           
+                <td>{{personaje.type}}</td>
+            </tr>
+            <tr>              
+                <th>Género:</th>               
+                <td>{{personaje.gender}}</td>
+            </tr>             
+            <tr>              
+                <th>Origin:</th>               
+                <td>{{personaje.origin.name}}</td>
+            </tr>
+            <tr>              
+                <th>Ubicación:</th>               
+                <td>{{personaje.location.name}}</td>
+            </tr>                      
+        </table>        
+    </div>
+</div>

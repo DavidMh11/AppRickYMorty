@@ -1,0 +1,167 @@
+div {
+  font-family: "Gothic A1", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  margin-left: 20px;
+}
+.title {
+  font-family: "ZCOOL KuaiLe", cursive;
+  text-align: center;
+  letter-spacing: 1px;
+  color: white;
+  font-size: 25px;
+}
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 100vh;
+}
+.box {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+  transition: 0.5s;
+  background: #24325fff;
+}
+.box:hover {
+  height: 400px;
+}
+.box .imgBx {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.box .imgBx img {
+  max-width: 100%;
+  opacity: 0.1;
+  transition: 0.5s;
+}
+
+.box:hover .imgBx img {
+  opacity: 1;
+}
+
+.box::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: white;
+  z-index: -1;
+}
+.box::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: white;
+  z-index: -2;
+  filter: blur(10px);
+}
+.box::before,
+.box::after {
+  background: linear-gradient(0deg, #69c8ecff, #24325fff);
+}
+.box .content {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  height: 90px;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  opacity: 0;
+  transition: 0.5s;
+}
+.box:hover .content {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.box .content h2 {
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 1px;
+}
+
+.box .content h2 span {
+  font-size: 14px;
+  color: white;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+.btn {
+  position: relative;
+  width: 80px;
+  height: 40px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container .btn:nth-child(1)::before,
+.container .btn:nth-child(1)::after {
+  background: #69c8ecff;
+  box-shadow: 0 0 5px #69c8ecff, 0 0 15px #69c8ecff, 0 0 30px #69c8ecff,
+    0 0 60px #69c8ecff;
+}
+
+.pages {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.page {
+  background-color: #69c8ecff;
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  transition: 0.5s;
+  margin-left: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.page:hover {
+  background: #e762e7ff;
+  box-shadow: 0 0 5px #e762e7ff, 0 0 15px #e762e7ff, 0 0 30px #e762e7ff,
+    0 0 60px #e762e7ff;
+}
+.number {
+  background-color: #24325fff;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  margin-left: 5px;
+  margin-right: 5px;
+  cursor: none;
+}
+
+.round {
+  border-radius: 50%;
+}
