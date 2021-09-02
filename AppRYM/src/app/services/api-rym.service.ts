@@ -13,7 +13,7 @@ export class ApiRYMService {
   constructor(private http: HttpClient) { }
 
   getPersonajes(query = '', page = 1) {
-    return this.http.get<PersonajeI[]>(this.ApiUrl + 'character/?name=' + query + '&page=' + page)
+    return this.http.get<PersonajeI[]>(this.ApiUrl + 'character/?name=' + query)
   }
   getPersonajesByPages(page: string) {
     return this.http.get<PersonajeI[]>(this.ApiUrl + 'character/?page=' + page)
